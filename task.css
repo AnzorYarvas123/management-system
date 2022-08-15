@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+
+header{
+    background-color: rgb(67, 67, 212);
+}
+
+footer{
+    display: flex;
+    align-content: flex-end;
+}
+
+.connects{
+
+    display: flex;
+  
+    /* justify-content: end; */
+    background-color:  rgb(67, 67, 212);
+
+}
+
+.linkdin{
+    color: white;
+    font-size: 23px;
+    
+}
+
+.Github{
+    color: white;
+    font-size: 23px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.pag{
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
