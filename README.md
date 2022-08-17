@@ -10,3 +10,6 @@ Third i created a function to print each employee name with their salary in the 
 
 
 Live Link: https://anzoryarvas123.github.io/management-system/
+
+-------------------------------------------------------------------
+
