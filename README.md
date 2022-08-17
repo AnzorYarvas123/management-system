@@ -13,3 +13,12 @@ Live Link: https://anzoryarvas123.github.io/management-system/
 
 -------------------------------------------------------------------
 
+# Task_2
+
+I created table its contain employees information:
+1- Employee Id.
+2- Employee Name.
+3- Employee Department.
+4- Employee Level.
+5- Employee Salary.
+
