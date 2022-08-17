@@ -1,4 +1,4 @@
-//constructor 
+// constructor 
 
 
 const Employee_Information = function (Employee_ID, Full_Name, Department, Level, Image_URL, Salary){
@@ -6,7 +6,6 @@ const Employee_Information = function (Employee_ID, Full_Name, Department, Level
     this.Name = Full_Name;
     this.Department = Department;
     this.Level = Level;
-    this.Image = Image_URL;
     this.Salary = Salary(Level);
 
 
@@ -45,6 +44,71 @@ let employee_Info = [
     new Employee_Information("1006", "Hadi Ahmad", "Finance", "Mid-Senior"),
 ]
 
+
+
+let Table = document.createElement("table");
+
+let T_body = document.createElement("tbody");
+
+
 for (const Employee_Information of employee_Info) {
     console.log(Employee_Information.Full_Name + " " + Employee_Information.Salary);
+
+     Table_Body(Employee_Information);
 }
+
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+function T_Head(Employee_Information) {
+
+    let table_head = document.createElement("thead");
+    let tr = document.createElement("tr");
+
+    for (const Loops of Object.entries(Employee_Information)) {
+
+        if (Loops[0]) {
+            let th = document.createElement("th");
+            th.textContent = Loops[0];
+            tr.append(th);
+        }
+    }
+
+
+
+    table_head.append(tr);
+
+    return table_head;
+}
+
+
+
+
+function Table_Body(Employee_Information) {
+
+    let tr = document.createElement("tr");
+
+    for (const loop of Object.entries(Employee_Information)) {
+        if (loop[0]) {
+            let th = document.createElement("th");
+            th.textContent = loop[1];
+            tr.append(th);
+        }
+    }
+
+    T_body.append(tr);
+}
+
+Table.append(T_Head(employee_Info[0]));
+Table.append(T_body);
+
+const main = document.getElementsByTagName("main");
+main[0].append(Table);
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
