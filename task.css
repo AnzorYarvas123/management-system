@@ -13,14 +13,16 @@ header{
 footer{
     display: flex;
     align-content: flex-end;
+
 }
 
 .connects{
 
     display: flex;
   
-    /* justify-content: end; */
+    justify-content: end;
     background-color:  rgb(67, 67, 212);
+    padding: 10px;
 
 }
 
@@ -46,3 +48,17 @@ footer{
     padding-bottom: 20px;
     color: white;
 }
+
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 150px 0px 142px 450px;
+
+}
+th, td{
+    padding: 10px 20px;
+    border: 1px solid #000;
+
+}
+
