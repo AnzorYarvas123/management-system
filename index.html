@@ -13,14 +13,50 @@
         <div class="pag">Welcome</div>
     </header>
 
+
+
     <main>
-        
+        <form id="form" action="">
+            <label>ID <span></span></label>
+            <input id="idInput"
+              placeholder="ID Number"
+              type="text"
+              name = 'id'
+              required
+            /><br>
+            <label>Full Name <span></span></label>
+
+            <input name="name" required id="nameInput" placeholder="Your Name" type="text" /><br>
+            <label for="">Department <span></span></label>
+            <select name="idDepartment" required id="idDepartment">
+              <option disabled selected value="">Choose Department</option>
+              <option>Administration</option>
+              <option>Marketing</option>
+              <option>Development</option>
+              <option>Finance</option>
+            </select><br>
+            <label for="">Level <span></span></label>
+            <select name="idLevel" required id="idLevel">
+              <option disabled selected value="">Choose Level</option>
+              <option value="Junior">Junior</option>
+              <option value="Mid-Senior">Mid-Senior</option>
+              <option value="Senior">Senior</option>
+            </select><br>
+            <label for="">Image <span></span> </label>
+            <input name="img" id="idImage" placeholder="Image_URL" type="text" /><br>
+            <button id="idSubmit" type="submit">Submit</button>
+          </form>
+          <div id="Card">
+
+          </div>
     </main>
 
-    <footer class="connects">
+
+
+    <!-- <footer class="connects">
         <div class="linkdin">Linkdin</div>
         <div class="Github">GitHub</div>
-    </footer>
+    </footer> -->
     
     <script src="./app.js"></script>
 </body>
