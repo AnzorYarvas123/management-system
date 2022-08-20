@@ -37,4 +37,4 @@ I created table its contain employees information:
 #Task_3
 
 
-I have created a form that asks for employees information and when you enter the information and click submit the result will appear in console.log.
+I have created a form that asks for employees information and when you enter the information and click submit the result will appear in console.
