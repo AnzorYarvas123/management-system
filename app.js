@@ -57,6 +57,11 @@ function render(event){
   console.log(New_Employee);
 }
 
+
+form.addEventListener("submit", render);
+
+
+
 // function print(employee){
 //     let Card = document.
 
@@ -66,7 +71,7 @@ function render(event){
 // // const form = document.getElementById("form");
 // let allEmployees = [] ;
 
-form.addEventListener("submit", render);
+
 
 
 //Random Salary
